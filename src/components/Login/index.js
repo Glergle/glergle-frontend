@@ -9,6 +9,7 @@ const Login = () => {
       <button onClick={() => setState(state => ({...state, isAuthenticated: state.isAuthenticated === null ? true : !state.isAuthenticated}))}>
         {state.isAuthenticated ? 'Logout' : 'Login'} here
       </button>
+      <a href={`${process.env.BASE_PATH}/login`}>Login</a>
     </div>
   )
 }
